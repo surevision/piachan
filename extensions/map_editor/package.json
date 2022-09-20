@@ -1,0 +1,61 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "map_editor",
+    "description": "i18n:map_editor.description",
+    "main": "./dist/main.js",
+    "dependencies": {
+        "vue": "2.6.14",
+        "fs-extra": "^10.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^16.0.1",
+        "@types/fs-extra": "^9.0.5",
+        "typescript": "^4.3.4"
+    },
+    "panels": {
+        "default": {
+            "title": "关卡编辑器",
+            "type": "dockable",
+            "main": "dist/panels/default",
+            "size": {
+                "min-width": 448,
+                "min-height": 648,
+                "width": 560,
+                "height": 648
+            }
+        }
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "i18n:menu.panel/map_editor",
+                "label": "i18n:map_editor.open_panel",
+                "message": "open-panel"
+            },
+            {
+                "path": "i18n:menu.develop/map_editor",
+                "label": "i18n:map_editor.send_to_panel",
+                "message": "send-to-panel"
+            }
+        ],
+        "messages": {
+            "open-panel": {
+                "methods": [
+                    "openPanel"
+                ]
+            },
+            "send-to-panel": {
+                "methods": [
+                    "default.hello"
+                ]
+            }
+        }
+    },
+    "author": "surevision",
+    "editor": ">=3.6.0",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    }
+}

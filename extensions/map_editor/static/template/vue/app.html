@@ -1,0 +1,10 @@
+<div class="counter">
+    <h2>编辑关卡</h2>
+    <canvas class="canvas" @mousedown="clickCanvas" width="448px" height="448px" style="width: 448px; height:448px; background-color:#66ccff;">
+    </canvas>
+    <div>
+        <ui-button @click="generate">输出</ui-button>
+        <ui-button @click="edit">导入</ui-button>
+    </div>
+    <textarea id="result" style="width: 448px;">{{mapStr}}</textarea>
+</div>
