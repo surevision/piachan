@@ -11,9 +11,11 @@
 截图：
 
 ![游戏场景](./doc/imgs/tp2.png)
+
 游戏场景（main）
 
 
-![关卡层数据编辑器](./doc/imgs/tp2.png)
+![关卡层数据编辑器](./doc/imgs/tp1.png)
+
 关卡层数据编辑器（面板->map_editor->关卡编辑器）
 
