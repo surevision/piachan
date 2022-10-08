@@ -79,26 +79,15 @@ export class main extends Component {
                 let types:Array<number> = [0, 1, 2, 3, 4, 5];
                 for (let i = 0; i < allCount; i += 3) {
                     let index = Math.floor(Math.random() * types.length);
-                    allData.push(types[index]);
-                    types.splice(index, 1);
                     if (types.length == 0) {
                         types = [0, 1, 2, 3, 4, 5];
                     }
-                    // 。。。。。。
-                    index = Math.floor(Math.random() * types.length);
+                    allData.push(types[index]);
+                    allData.push(types[index]);
                     allData.push(types[index]);
                     types.splice(index, 1);
-                    if (types.length == 0) {
-                        types = [0, 1, 2, 3, 4, 5];
-                    }
-                    // 。。。。。。
-                    index = Math.floor(Math.random() * types.length);
-                    allData.push(types[index]);
-                    types.splice(index, 1);
-                    if (types.length == 0) {
-                        types = [0, 1, 2, 3, 4, 5];
-                    }
                 }
+                // log(allData);
                 tmpCheckMap = {};
                 let levelData:Array<Array<[number, number, number, number, number]>> = [];
                 let levelLayerData:Array<[number, number, number, number, number]> = [];
